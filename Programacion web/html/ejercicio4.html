@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Empleados</title>
+    <script src="../Js/registroEmpleado.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Empleados</h1>
+    <form id="formulario-empleado" onsubmit="return false;">
+        <label for="codigo">Código del Empleado:</label>
+        <input type="text" id="codigo" required>
+        <br>
+        <label for="nombre">Nombre del Empleado:</label>
+        <input type="text" id="nombre" required>
+        <br>
+        <button type="button" onclick="agregarEmpleado()">Agregar Empleado</button>
+    </form>
+
+    <h2>Lista de Empleados</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-empleados">
+            <!-- Las filas de empleados se agregarán aquí -->
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posición del Ratón</title>
+    <style>
+        #posicion {
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-width: 200px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="posicion">
+        <h1>Ratón</h1>
+        <p>Navegador: <span id="posicion-navegador">[0, 0]</span></p>
+        <p>Página: <span id="posicion-pagina">[0, 0]</span></p>
+    </div>
+
+    <script src="../Js/mostrarPosicion.js"></script>
+</body>
+</html>
